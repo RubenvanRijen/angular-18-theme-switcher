@@ -1,0 +1,29 @@
+// _themes.scss
+@import 'light-theme';
+@import 'dark-theme';
+@import 'blue-theme';
+
+@mixin apply-theme($theme-name) {
+  $theme-map: map-get($themes, $theme-name);
+  --bgColor: #{map-get($theme-map, bgColor)};
+  --textColor: #{map-get($theme-map, textColor)};
+  --borderColor: #{map-get($theme-map, borderColor)};
+}
+
+$themes: (
+  lightTheme: $light-theme,
+  darkTheme: $dark-theme,
+  blueTheme: $blue-theme,
+);
+
+html.light {
+  @include apply-theme('lightTheme');
+}
+
+html.dark {
+  @include apply-theme('darkTheme');
+}
+
+html.blue {
+  @include apply-theme('blueTheme');
+}

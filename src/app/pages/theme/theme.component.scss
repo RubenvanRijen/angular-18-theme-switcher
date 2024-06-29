@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+  background-color: var(--bgColor);
+  color: var(--textColor);
+  p{
+    margin-top: -1px;
+    padding: 2rem;
+  }
+  .centered {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

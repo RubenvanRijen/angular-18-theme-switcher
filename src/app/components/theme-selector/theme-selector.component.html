@@ -1,0 +1,8 @@
+<div class="theme-selector">
+  <label class="switch">
+    <span class="slider"></span>
+  </label>
+  <select class="theme-dropdown" (change)="changeTheme($event)">
+    <option *ngFor="let theme of themes" [value]="theme" [selected]="theme === currentTheme">{{ theme }}</option>
+  </select>
+</div>
