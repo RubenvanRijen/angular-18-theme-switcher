@@ -93,3 +93,7 @@ html.newTheme {
 The application saves the user's theme preference in the browser's localStorage, ensuring the chosen theme persists across sessions. Upon loading, the application checks for a saved theme preference and applies it automatically.
 
 For more details on implementation, refer to the `theme-switcher.service.ts` for logic, `theme.scss` for theme definitions, and the component files for UI elements related to theme switching.
+
+
+## Preview
+![Theme Switching Demo](src/assets/theme-switching-demo.gif)
